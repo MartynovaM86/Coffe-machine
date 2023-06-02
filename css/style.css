@@ -1,0 +1,94 @@
+body {
+	font-family: "Pacifico", cursive;
+	background-image: url(/img/cafe2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+  }
+  .coffee_block {
+	background-color: #699edf;
+	border: 1px solid black;
+	border-radius: 2px;
+	margin-bottom: 1rem;
+  }
+  .coffee_btn {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border-left: 70px solid rgb(244, 0, 41);
+	margin-top: 5px;
+	cursor: pointer;
+  }
+  .coffee_btn:hover {
+	width: 0;
+	height: 0;
+	border-top: 35px solid transparent;
+	border-left: 70px solid rgba(98, 238, 11, 0.941);
+	border-bottom: 35px solid transparent;
+	position: relative;
+	left: 5px;
+	filter: drop-shadow(6px 0 2px #474747); /*тень*/
+  }
+  .coffee_block span {
+	color: black;
+	padding-left: 1rem;
+	font-size: 1.5rem;
+	line-height: 80px;
+	vertical-align: middle;
+	font-weight: 700;
+  }
+  #display {
+	width: 100%;
+	height: 230px;
+	background-color: #699edf;
+	color: black;
+	border: 4px double black;
+	text-align: center;
+	padding: 10px;
+  }
+  img[src$="rub.jpg"]:hover {
+	filter: contrast(150%);
+	cursor: pointer;
+  }
+  img[src$="rub.png"] {
+	width: 60px;
+	position: absolute;
+  }
+  img[src$="rub.png"]:hover {
+	filter: contrast(150%);
+	cursor: pointer;
+  }
+  .animated {
+	animation-name: hide-bill;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+  }
+  @keyframes hide-bill {
+	0% {
+	  transform: rotate(-90deg) rotateY(45deg);
+	  opacity: 1;
+	}
+	50% {
+	  transform: skewY(40);
+	}
+	100% {
+	  transform: rotate(-90deg) rotateY(75deg);
+	  opacity: 0;
+	}
+  }
+  .fa-solid {
+	color: #fef400;
+	font-size: 1.2rem;
+	margin-right: 0.5rem;
+  }
+  .progress {
+	height: 1.2rem;
+  }
+  #changeBox {
+	width: 100%;
+	height: 200px;
+	background-color: rgb(244, 0, 41, 0.6);
+	border: 1px solid black;
+	position: relative;
+  }
